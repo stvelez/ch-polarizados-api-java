@@ -1,0 +1,9 @@
+/Users/stibenvelez/IdeaProjects/ch_poalrizados_api/src/main/java/com/example/chpolarizadosapi/ChPolarizadosApiApplication.java
+/Users/stibenvelez/IdeaProjects/ch_poalrizados_api/src/main/java/com/example/chpolarizadosapi/config/CorsConfig.java
+/Users/stibenvelez/IdeaProjects/ch_poalrizados_api/src/main/java/com/example/chpolarizadosapi/controller/ProductController.java
+/Users/stibenvelez/IdeaProjects/ch_poalrizados_api/src/main/java/com/example/chpolarizadosapi/controller/UserController.java
+/Users/stibenvelez/IdeaProjects/ch_poalrizados_api/src/main/java/com/example/chpolarizadosapi/model/Product.java
+/Users/stibenvelez/IdeaProjects/ch_poalrizados_api/src/main/java/com/example/chpolarizadosapi/model/User.java
+/Users/stibenvelez/IdeaProjects/ch_poalrizados_api/src/main/java/com/example/chpolarizadosapi/repository/ProductRepository.java
+/Users/stibenvelez/IdeaProjects/ch_poalrizados_api/src/main/java/com/example/chpolarizadosapi/repository/UserRepository.java
+/Users/stibenvelez/IdeaProjects/ch_poalrizados_api/src/main/java/com/example/chpolarizadosapi/service/ProductService.java

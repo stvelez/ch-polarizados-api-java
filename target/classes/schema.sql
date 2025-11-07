@@ -1,0 +1,16 @@
+-- Schema simple para products y users
+
+CREATE TABLE IF NOT EXISTS products (
+  id BIGINT PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(255) NOT NULL,
+  category VARCHAR(255),
+  created_at DATETIME,
+  price DECIMAL(19,2) DEFAULT 0
+);
+
+CREATE TABLE IF NOT EXISTS users (
+  id BIGINT PRIMARY KEY AUTO_INCREMENT,
+  email VARCHAR(255) NOT NULL UNIQUE,
+  password VARCHAR(255) NOT NULL
+);
+
