@@ -1,7 +1,7 @@
-package main.java.com.example.chpolarizadosapi.controller;
+package com.example.chpolarizadosapi.controller;
 
-import main.java.com.example.chpolarizadosapi.model.User;
-import main.java.com.example.chpolarizadosapi.repository.UserRepository;
+import com.example.chpolarizadosapi.model.User;
+import com.example.chpolarizadosapi.repository.UserRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -37,7 +37,7 @@ public class UserController {
         }
         String hashed = BCrypt.hashpw(rawPassword, BCrypt.gensalt());
         user.setPassword(hashed);
-        repository.create(user);
+        repository.save(user);
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }
 

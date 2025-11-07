@@ -1,7 +1,7 @@
-package main.java.com.example.chpolarizadosapi.controller;
+package com.example.chpolarizadosapi.controller;
 
-import main.java.com.example.chpolarizadosapi.model.Product;
-import main.java.com.example.chpolarizadosapi.service.ProductService;
+import com.example.chpolarizadosapi.model.Product;
+import com.example.chpolarizadosapi.service.ProductService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

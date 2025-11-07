@@ -17,6 +17,7 @@ Pequeña API Spring Boot para la actividad.
 ## Ejecutar la aplicación (modo rápido)
 
 1. Construir el JAR:
+2. mvn spring-boot:run
 
 ```bash
 mvn -DskipTests clean package

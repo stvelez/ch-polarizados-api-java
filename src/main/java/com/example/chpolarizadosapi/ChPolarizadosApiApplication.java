@@ -1,4 +1,4 @@
-package main.java.com.example.chpolarizadosapi;
+package com.example.chpolarizadosapi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

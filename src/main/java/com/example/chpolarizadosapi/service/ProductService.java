@@ -1,7 +1,7 @@
-package main.java.com.example.chpolarizadosapi.service;
+package com.example.chpolarizadosapi.service;
 
-import main.java.com.example.chpolarizadosapi.model.Product;
-import main.java.com.example.chpolarizadosapi.repository.ProductRepository;
+import com.example.chpolarizadosapi.model.Product;
+import com.example.chpolarizadosapi.repository.ProductRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -28,10 +28,19 @@ public class ProductService {
     }
 
     public boolean update(Long id, Product product) {
-        return repository.update(id, product) > 0;
+        return repository.findById(id).map(existing -> {
+            existing.setName(product.getName());
+            existing.setCategory(product.getCategory());
+            existing.setPrice(product.getPrice());
+            repository.save(existing);
+            return true;
+        }).orElse(false);
     }
 
     public boolean delete(Long id) {
-        return repository.delete(id) > 0;
+        return repository.findById(id).map(p -> {
+            repository.deleteById(id);
+            return true;
+        }).orElse(false);
     }
 }
